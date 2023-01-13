@@ -21,7 +21,7 @@ export const restaurants = [
     name: "McDonalds",
     score: "3.5",
     time: "10-50 min.",
-    img: require("./../assets/images/restaurant/mcdonald.png"),
+    img: require("./../assets/img/restaurant/mcdonalds.png"),
     discount: "50% DCTO",
     category: "Hamburgesas",
   },
@@ -29,7 +29,7 @@ export const restaurants = [
     name: "MELT pizzas",
     score: "4.5",
     time: "10-60 min.",
-    img: require("./../assets/images/restaurant/melt.png"),
+    img: require("./../assets/img/restaurant/melt.png"),
     discount: "30% DCTO",
     category: "Pizzeria - Snacks",
   },
@@ -37,7 +37,7 @@ export const restaurants = [
     name: "YOKONO",
     score: "3.5",
     time: "10-50 min.",
-    img: require("./../assets/images/restaurant/yokono.png"),
+    img: require("./../assets/img/restaurant/yokono.png"),
     discount: "20% DCTO",
     category: "Snacks",
   },
@@ -45,7 +45,7 @@ export const restaurants = [
     name: "Lasagna Pizza",
     score: "3.5",
     time: "10-50 min.",
-    img: require("./../assets/images/restaurant/papa.png"),
+    img: require("./../assets/img/restaurant/papaJohns.png"),
     discount: "50% DCTO",
     category: "Comida Italiana",
   },
@@ -54,15 +54,15 @@ export const restaurants = [
 export const categories = [
   {
     name: "HAMBURGESAS",
-    img: require("./../assets/images/categories/burger.png"),
+    img: require("./../assets/img/categories/hamburguesas.png"),
   },
   {
     name: "ITALIANA",
-    img: require("./../assets/images/categories/pasta.png"),
+    img: require("./../assets/img/categories/italiana.png"),
   },
   {
     name: "PIZZAS",
-    img: require("./../assets/images/categories/pizza.png"),
+    img: require("./../assets/img/categories/pizza.png"),
   },
 ];
 
