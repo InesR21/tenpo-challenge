@@ -1,4 +1,4 @@
-export const carousel = [
+export const headerCarousel = [
   {
     title: "Tenpo",
     subtitle: "Eats",
@@ -18,6 +18,7 @@ export const carousel = [
 
 export const restaurants = [
   {
+    id: "1",
     name: "McDonalds",
     score: "3.5",
     time: "10-50 min.",
@@ -26,6 +27,7 @@ export const restaurants = [
     category: "Hamburgesas",
   },
   {
+    id: "2",
     name: "MELT pizzas",
     score: "4.5",
     time: "10-60 min.",
@@ -34,6 +36,7 @@ export const restaurants = [
     category: "Pizzeria - Snacks",
   },
   {
+    id: "3",
     name: "YOKONO",
     score: "3.5",
     time: "10-50 min.",
@@ -42,6 +45,7 @@ export const restaurants = [
     category: "Snacks",
   },
   {
+    id: "4",
     name: "Lasagna Pizza",
     score: "3.5",
     time: "10-50 min.",

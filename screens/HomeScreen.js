@@ -3,9 +3,9 @@ import React from "react";
 import { styled } from "nativewind";
 import Header from "../components/Header";
 import SearchAddressBar from "../components/SearchAddressBar";
-import Restaurants from "../components/Restaurants";
-import Categories from "../components/Categories";
-import Favorites from "../components/Favorites";
+import RestaurantsList from "../components/RestaurantsList";
+import CategoriesList from "../components/CategoriesList";
+import FavoritesList from "../components/FavoritesList";
 
 const Container = styled(View, "flex-1 items-center, bg-[#F2F2F2] ");
 const HeaderContainer = styled(View, " w-full h-36 px-4 pt-2");
@@ -15,7 +15,7 @@ const SearchBarContainer = styled(
 );
 const ContentContainer = styled(
   View,
-  "flex-1 w-full bg-white justify-between rounded-t-3xl px-4 py-6"
+  "flex-1 w-full bg-white justify-between rounded-t-3xl  py-6"
 );
 
 const HomeScreen = () => {
@@ -28,10 +28,20 @@ const HomeScreen = () => {
         <SearchBarContainer>
           <SearchAddressBar />
         </SearchBarContainer>
-        <ContentContainer>
-          <Restaurants />
-          <Categories />
-          <Favorites />
+        <ContentContainer
+          style={{
+            shadowColor: "#00000029",
+            shadowOffset: {
+              width: 0,
+              height: 1,
+            },
+            shadowOpacity: 0.3,
+            elevation: 3,
+          }}
+        >
+          <RestaurantsList />
+          <CategoriesList />
+          <FavoritesList />
         </ContentContainer>
       </Container>
     </SafeAreaView>

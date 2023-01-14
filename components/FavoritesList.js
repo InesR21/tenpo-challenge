@@ -1,0 +1,25 @@
+import { View, Text, FlatList } from "react-native";
+import React from "react";
+import { favorites } from "../config/globalData";
+import FavoriteItem from "./FavoriteItem";
+import { styled } from "nativewind";
+
+const Container = styled(View, " w-full space-y-2 pl-4 ");
+const Title = styled(Text, "font-bold text-lg");
+
+const FavoritesList = () => {
+  return (
+    <Container>
+      <Title>TUS FAVORITOS</Title>
+      <FlatList
+        horizontal
+        showsHorizontalScrollIndicator={false}
+        data={favorites}
+        renderItem={({ item }) => <FavoriteItem favorite={item} />}
+        keyExtractor={(item) => item.name}
+      />
+    </Container>
+  );
+};
+
+export default FavoritesList;
