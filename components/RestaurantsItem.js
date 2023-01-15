@@ -1,6 +1,7 @@
 import { View, Text, Image, TouchableOpacity } from "react-native";
 import React from "react";
 import { styled } from "nativewind";
+import { useNavigation } from "@react-navigation/native";
 
 const Container = styled(
   View,
@@ -26,21 +27,25 @@ const TextDiscount = styled(
 
 const RestaurantsItem = ({ restaurant = {} }) => {
   if (Object.keys(restaurant).length === 0) return null;
+  const { discount, img, name, score, time } = restaurant;
+  const navigation = useNavigation();
 
   return (
-    <TouchableOpacity>
+    <TouchableOpacity
+      onPress={() => navigation.navigate("RestaurantDetails", { restaurant })}
+    >
       <Container>
         <ViewDiscount>
-          <TextDiscount>{restaurant.discount}</TextDiscount>
+          <TextDiscount>{discount}</TextDiscount>
         </ViewDiscount>
-        <ImageStyled source={restaurant.img} />
-        <TextStyled>{restaurant.name}</TextStyled>
+        <ImageStyled source={img} />
+        <TextStyled>{name}</TextStyled>
         <TextContainer>
           <ViewScoreStyled>
             <ImageStart source={require("./../assets/img/star.png")} />
-            <TextStyled>{restaurant.score}</TextStyled>
+            <TextStyled>{score}</TextStyled>
           </ViewScoreStyled>
-          <TextStyled>{restaurant.time}</TextStyled>
+          <TextStyled>{time}</TextStyled>
         </TextContainer>
       </Container>
     </TouchableOpacity>
