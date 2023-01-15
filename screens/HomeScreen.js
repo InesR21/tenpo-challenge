@@ -1,4 +1,4 @@
-import { SafeAreaView, StyleSheet, Text, View } from "react-native";
+import { SafeAreaView, StyleSheet, ScrollView, View } from "react-native";
 import React from "react";
 import { styled } from "nativewind";
 import Header from "../components/Header";
@@ -8,7 +8,7 @@ import CategoriesList from "../components/CategoriesList";
 import FavoritesList from "../components/FavoritesList";
 
 const Container = styled(View, "flex-1 items-center, bg-[#F2F2F2] ");
-const HeaderContainer = styled(View, " w-full h-36 px-4 pt-2");
+const HeaderContainer = styled(View, " w-full h-52 px-4 pt-2");
 const SearchBarContainer = styled(
   View,
   "bg-[#D4F9F5] w-full h-14 rounded-t-3xl  justify-center items-center"
@@ -21,29 +21,31 @@ const ContentContainer = styled(
 const HomeScreen = () => {
   return (
     <SafeAreaView style={{ flex: 1 }}>
-      <Container>
-        <HeaderContainer>
-          <Header />
-        </HeaderContainer>
-        <SearchBarContainer>
-          <SearchAddressBar />
-        </SearchBarContainer>
-        <ContentContainer
-          style={{
-            shadowColor: "#00000029",
-            shadowOffset: {
-              width: 0,
-              height: 1,
-            },
-            shadowOpacity: 0.3,
-            elevation: 3,
-          }}
-        >
-          <RestaurantsList />
-          <CategoriesList />
-          <FavoritesList />
-        </ContentContainer>
-      </Container>
+      <ScrollView bounces={false} showsVerticalScrollIndicator={false}>
+        <Container>
+          <HeaderContainer>
+            <Header />
+          </HeaderContainer>
+          <SearchBarContainer>
+            <SearchAddressBar />
+          </SearchBarContainer>
+          <ContentContainer
+            style={{
+              shadowColor: "#00000029",
+              shadowOffset: {
+                width: 0,
+                height: 1,
+              },
+              shadowOpacity: 0.3,
+              elevation: 3,
+            }}
+          >
+            <RestaurantsList />
+            <CategoriesList />
+            <FavoritesList />
+          </ContentContainer>
+        </Container>
+      </ScrollView>
     </SafeAreaView>
   );
 };

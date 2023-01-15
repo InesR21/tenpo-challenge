@@ -1,15 +1,18 @@
 export const headerCarousel = [
   {
+    id: "1",
     title: "Tenpo",
     subtitle: "Eats",
     description: "DELIVER APP",
   },
   {
+    id: "2",
     title: "Tenpo",
     subtitle: "Eats",
     description: "DELIVER APP",
   },
   {
+    id: "3",
     title: "Tenpo",
     subtitle: "Eats",
     description: "DELIVER APP",

@@ -6,7 +6,7 @@ const Container = styled(
   View,
   " py-2 mb-6  px-2 justify-center relative  items-center rounded-xl "
 );
-const ImageStyled = styled(Image, "w-28 h-28 mb-2 rounded-xl");
+const ImageStyled = styled(Image, "w-24 h-24 mb-2 rounded-xl");
 const TextContainer = styled(
   View,
   "flex-row justify-between w-28 items-center px-0.5"
