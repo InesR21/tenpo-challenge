@@ -3,6 +3,6 @@ import addressReducer from "../features/address/addressSlice";
 
 export const store = configureStore({
   reducer: {
-    nav: addressReducer,
+    address: addressReducer,
   },
 });
