@@ -13,7 +13,6 @@ const MapScreen = () => {
   const navigation = useNavigation();
   const dispatch = useDispatch();
   const Stack = createNativeStackNavigator();
-  console.log(process.env.EXPO_GOOGLE_MAPS_API_KEY);
 
   return (
     <SafeAreaView styles={{ position: "relative" }}>

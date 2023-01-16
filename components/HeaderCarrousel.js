@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import { styled } from "nativewind";
 import { headerCarousel } from "./../config/globalData";
 import HeaderTabs from "./HeaderTabs";
+import HeaderCross from "./HeaderCross";
 const { width } = Dimensions.get("window");
 
 const Container = styled(View, "h-40");
@@ -34,6 +35,7 @@ const HeaderCarrousel = () => {
 
   return (
     <Container>
+      <HeaderCross />
       <FlatList
         horizontal
         showsHorizontalScrollIndicator={false}
