@@ -1,6 +1,7 @@
 import { Animated } from "react-native";
 import React, { useEffect, useRef } from "react";
 import { styled } from "nativewind";
+import { animatedCrossFadeIn } from "../utils/animations";
 
 const ImageCrossRigh1 = styled(
   Animated.Image,
@@ -23,16 +24,9 @@ const ImageCrossLeft2 = styled(
 
 const HeaderCross = () => {
   const fadeAnim = useRef(new Animated.Value(0)).current;
-  const fadeIn = () => {
-    Animated.timing(fadeAnim, {
-      toValue: 1,
-      duration: 2000,
-      useNativeDriver: true,
-    }).start();
-  };
 
   useEffect(() => {
-    fadeIn();
+    animatedCrossFadeIn(fadeAnim);
   }, []);
 
   return (
