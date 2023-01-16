@@ -2,7 +2,6 @@ import { View, Text, SafeAreaView } from "react-native";
 import React from "react";
 import { useNavigation } from "@react-navigation/native";
 import { GooglePlacesAutocomplete } from "react-native-google-places-autocomplete";
-import { GOOGLE_MAPS_APIKEY } from "@env";
 import { useDispatch } from "react-redux";
 import { setAddress } from "../features/address/addressSlice";
 import Map from "../components/Map";
@@ -14,6 +13,7 @@ const MapScreen = () => {
   const navigation = useNavigation();
   const dispatch = useDispatch();
   const Stack = createNativeStackNavigator();
+  console.log(process.env.EXPO_GOOGLE_MAPS_API_KEY);
 
   return (
     <SafeAreaView styles={{ position: "relative" }}>
@@ -66,7 +66,7 @@ const MapScreen = () => {
           navigation.navigate("Map");
         }}
         query={{
-          key: "AIzaSyBc99Z4HsSLZxUv9XPmkFrCzUcjGuL6ppU",
+          key: process.env.EXPO_GOOGLE_MAPS_API_KEY,
           language: "en",
         }}
       />
