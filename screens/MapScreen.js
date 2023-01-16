@@ -8,6 +8,7 @@ import { setAddress } from "../features/address/addressSlice";
 import Map from "../components/Map";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import waitingLocation from "../components/WaitingLocation";
+import HeaderMaps from "../components/HeaderMaps";
 
 const MapScreen = () => {
   const navigation = useNavigation();
@@ -16,17 +17,7 @@ const MapScreen = () => {
 
   return (
     <SafeAreaView styles={{ position: "relative" }}>
-      {/* Header Mapp */}
-      <Text
-        style={{
-          color: "red",
-          textAlign: "center",
-          paddingVertical: 10,
-          marginBottom: 70,
-        }}
-      >
-        MapScreen
-      </Text>
+      <HeaderMaps />
 
       {/* Search bar */}
       <GooglePlacesAutocomplete
