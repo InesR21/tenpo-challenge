@@ -1,9 +1,17 @@
-import { View, Text, Image, FlatList, Dimensions } from "react-native";
-import React, { useState } from "react";
+import {
+  View,
+  Text,
+  Image,
+  FlatList,
+  Dimensions,
+  Animated,
+} from "react-native";
+import React, { useEffect, useRef, useState } from "react";
 import { styled } from "nativewind";
 import { headerCarousel } from "./../config/globalData";
 import HeaderTabs from "./HeaderTabs";
 import HeaderCross from "./HeaderCross";
+import { animatedimgFadeIn } from "../utils/animations";
 const { width } = Dimensions.get("window");
 
 const Container = styled(View, "h-40");
@@ -20,7 +28,11 @@ const ImageContainer = styled(
   "flex-row basis-2/4 h-40 justify-center items-center"
 );
 const ImageHand = styled(Image, "z-10 w-34 h-36 absolute right-5 bottom-0 ");
-const ImageMotorcycle = styled(Image, "w-20 h-24 absolute right-10 top-1");
+const ContainerImageMotorcycle = styled(
+  Animated.View,
+  "w-20 h-24 absolute right-14 top-2"
+);
+const ImageMotorcycle = styled(Animated.Image, "w-24 h-28");
 
 const HeaderCarrousel = () => {
   const [slideActive, setSlideActive] = useState(1);
@@ -32,6 +44,11 @@ const HeaderCarrousel = () => {
       setSlideActive(slide);
     }
   };
+  const imgAnimated = useRef(new Animated.ValueXY({ x: 60, y: 10 })).current;
+
+  useEffect(() => {
+    animatedimgFadeIn(imgAnimated, 10, 30);
+  }, []);
 
   return (
     <Container>
@@ -55,9 +72,11 @@ const HeaderCarrousel = () => {
                 resizeMode="contain"
                 source={require("./../assets/img/header/hand.png")}
               />
-              <ImageMotorcycle
-                source={require("./../assets/img/header/motorcycle.png")}
-              />
+              <ContainerImageMotorcycle style={imgAnimated.getLayout()}>
+                <ImageMotorcycle
+                  source={require("./../assets/img/header/motorcycle.png")}
+                />
+              </ContainerImageMotorcycle>
             </ImageContainer>
           </ContainerCarrousel>
         )}
