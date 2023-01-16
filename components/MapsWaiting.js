@@ -5,7 +5,7 @@ import { styled } from "nativewind";
 const Container = styled(View, "bg-white w-full h-full items-center pt-[50%]");
 const TextStyle = styled(Text, "text-[#adadad] text-lg");
 
-const WaitingLocation = () => {
+const MapsWaiting = () => {
   return (
     <Container>
       <TextStyle>Esperando tu ubicación...</TextStyle>
@@ -13,4 +13,4 @@ const WaitingLocation = () => {
   );
 };
 
-export default WaitingLocation;
+export default MapsWaiting;

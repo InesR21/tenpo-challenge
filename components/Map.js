@@ -4,7 +4,7 @@ import { styled } from "nativewind";
 import MapView, { Marker } from "react-native-maps";
 import { useSelector } from "react-redux";
 import { selectAddress } from "../features/address/addressSlice";
-import AddAddressInfo from "./AddAddressInfo";
+import MapsAddAddressInfo from "./MapsAddAddressInfo";
 
 const Container = styled(View, "flex flex-col bg-white h-full");
 
@@ -59,7 +59,7 @@ const Map = () => {
         )}
       </MapView>
       <View>
-        <AddAddressInfo />
+        <MapsAddAddressInfo />
       </View>
     </Container>
   );

@@ -19,7 +19,7 @@ const TextButton = styled(
   "text-white text-base text-center font-bold uppercase"
 );
 
-const AddAddressInfo = () => {
+const MapsAddAddressInfo = () => {
   const navigation = useNavigation();
 
   return (
@@ -34,4 +34,4 @@ const AddAddressInfo = () => {
   );
 };
 
-export default AddAddressInfo;
+export default MapsAddAddressInfo;

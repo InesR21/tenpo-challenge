@@ -6,8 +6,8 @@ import { useDispatch } from "react-redux";
 import { setAddress } from "../features/address/addressSlice";
 import Map from "../components/Map";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
-import waitingLocation from "../components/WaitingLocation";
-import HeaderMaps from "../components/HeaderMaps";
+import MapsHeader from "../components/MapsHeader";
+import MapsWaiting from "../components/MapsWaiting";
 
 const MapScreen = () => {
   const navigation = useNavigation();
@@ -16,7 +16,7 @@ const MapScreen = () => {
 
   return (
     <SafeAreaView styles={{ position: "relative" }}>
-      <HeaderMaps />
+      <MapsHeader />
 
       {/* Search bar */}
       <GooglePlacesAutocomplete
@@ -76,7 +76,7 @@ const MapScreen = () => {
             headerShown: false,
           }}
         >
-          <Stack.Screen name="WaitingLocation" component={waitingLocation} />
+          <Stack.Screen name="WaitingLocation" component={MapsWaiting} />
           <Stack.Screen name="Map" component={Map} />
         </Stack.Navigator>
       </View>

@@ -9,7 +9,7 @@ const Container = styled(
 const TextStyle = styled(Text, "text-[#008f7e] text-lg");
 const ImageStyled = styled(Image, "w-6 h-6 mr-4");
 
-const HeaderMaps = () => {
+const MapsHeader = () => {
   return (
     <Container>
       <ImageStyled
@@ -21,4 +21,4 @@ const HeaderMaps = () => {
   );
 };
 
-export default HeaderMaps;
+export default MapsHeader;
