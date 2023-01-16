@@ -14,19 +14,16 @@ export default function App() {
   return (
     <Provider store={store}>
       <NavigationContainer>
-        <Stack.Navigator>
-          <Stack.Screen
-            name="Home"
-            component={HomeScreen}
-            options={{
-              headerShown: false,
-            }}
-          />
+        <Stack.Navigator
+          screenOptions={{
+            headerShown: false,
+          }}
+        >
+          <Stack.Screen name="Home" component={HomeScreen} />
           <Stack.Screen
             name="Maps"
             component={MapScreen}
             options={{
-              headerShown: false,
               animation: "slide_from_bottom",
               animationDuration: 800,
             }}
@@ -34,6 +31,10 @@ export default function App() {
           <Stack.Screen
             name="RestaurantDetails"
             component={RestaurantDetailsScreen}
+            options={{
+              animation: "slide_from_bottom",
+              animationDuration: 800,
+            }}
           />
         </Stack.Navigator>
       </NavigationContainer>

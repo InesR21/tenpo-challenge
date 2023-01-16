@@ -35,7 +35,7 @@ const HomeScreen = () => {
             <Header />
           </HeaderContainer>
           <SearchBarContainer onPress={() => navigation.navigate("Maps")}>
-            <SearchAddressBar />
+            <SearchAddressBar detail={"Enviaremos tus pedidos a"} showIcon />
           </SearchBarContainer>
           <ContentContainer>
             <RestaurantsList />
