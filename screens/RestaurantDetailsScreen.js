@@ -9,10 +9,11 @@ import React from "react";
 import { useNavigation, useRoute } from "@react-navigation/native";
 import { styled } from "nativewind";
 import SearchAddressBar from "../components/SearchAddressBar";
+import Constants from "expo-constants";
 
 const ContainerHeader = styled(
   View,
-  "bg-[#D4F9F5] h-32 w-full justify-around flex-row items-center px-4"
+  "bg-[#D4F9F5] h-44 w-full justify-around flex-row items-center px-4"
 );
 
 const ContainerContent = styled(
@@ -29,8 +30,8 @@ const RestaurantDetailsScreen = () => {
   const navigation = useNavigation();
 
   return (
-    <SafeAreaView>
-      <ContainerHeader>
+    <>
+      <ContainerHeader style={{ paddingTop: Constants.statusBarHeight }}>
         <TouchableOpacity onPress={() => navigation.goBack()}>
           <Image
             source={require("./../assets/img/back.png")}
@@ -55,7 +56,7 @@ const RestaurantDetailsScreen = () => {
         <TextDescription>{category}</TextDescription>
         <TextDetails>Detalle de restaurante</TextDetails>
       </ContainerContent>
-    </SafeAreaView>
+    </>
   );
 };
 

@@ -1,6 +1,7 @@
 import { View, Text, Image } from "react-native";
 import React from "react";
 import { styled } from "nativewind";
+import Constants from "expo-constants";
 
 const Container = styled(
   View,
@@ -11,7 +12,7 @@ const ImageStyled = styled(Image, "w-6 h-6 mr-4");
 
 const MapsHeader = () => {
   return (
-    <Container>
+    <Container styles={{ paddingTop: Constants.statusBarHeight }}>
       <ImageStyled
         resizeMode="contain"
         source={require("./../assets/img/header/gps.png")}
