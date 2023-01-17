@@ -14,6 +14,7 @@ import CategoriesList from "../components/CategoriesList";
 import FavoritesList from "../components/FavoritesList";
 import { useNavigation } from "@react-navigation/native";
 import Constants from "expo-constants";
+import FakeFetch from "../components/FakeFetch";
 
 const Container = styled(View, "flex-1 items-center, bg-[#F2F2F2] ");
 const HeaderContainer = styled(View, " w-full h-52 px-4 pt-2");
@@ -44,6 +45,7 @@ const HomeScreen = () => {
             <FavoritesList />
           </ContentContainer>
         </Container>
+        <FakeFetch />
       </ScrollView>
     </SafeAreaView>
   );
