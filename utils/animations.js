@@ -9,7 +9,7 @@ export const animatedCrossFadeIn = (fadeAnim) => {
 };
 
 export const animatedimgFadeIn = (fadeAnim, x, y) => {
-  Animated.spring(fadeAnim, {
+  Animated.timing(fadeAnim, {
     toValue: { x: x, y: y },
     duration: 1000,
     useNativeDriver: false,
