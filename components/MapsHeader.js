@@ -12,7 +12,7 @@ const ImageStyled = styled(Image, "w-6 h-6 mr-4");
 
 const MapsHeader = () => {
   return (
-    <Container styles={{ paddingTop: Constants.statusBarHeight }}>
+    <Container>
       <ImageStyled
         resizeMode="contain"
         source={require("./../assets/img/header/gps.png")}
