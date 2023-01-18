@@ -34,20 +34,20 @@ Debes desarrollar una aplicación en React Native siguiendo el diseño que se in
 
 **Home**
 
-<img width="400" alt="image" src="https://user-images.githubusercontent.com/45639602/213190151-05f28981-d3bd-4fd8-b986-cbad192735f4.png"> * * * * * * * * * * <img width="400" alt="image" src="https://user-images.githubusercontent.com/45639602/213190960-5defc20f-e497-4fb2-afb9-8fc6450d4ac2.png">
+<img width="400" alt="image" src="https://user-images.githubusercontent.com/45639602/213190151-05f28981-d3bd-4fd8-b986-cbad192735f4.png"> * * * * * * <img width="400" alt="image" src="https://user-images.githubusercontent.com/45639602/213190960-5defc20f-e497-4fb2-afb9-8fc6450d4ac2.png">
 
 **Search Directions**
 
-<img width="400" alt="image" src="https://user-images.githubusercontent.com/45639602/213190711-7d6dbddb-5fb3-40c1-89ef-85bc0bd55075.png"> * * * * * * * * * * <img width="400" alt="image" src="https://user-images.githubusercontent.com/45639602/213190921-f2368240-c091-40df-b942-809f91063dfc.png">
+<img width="400" alt="image" src="https://user-images.githubusercontent.com/45639602/213190711-7d6dbddb-5fb3-40c1-89ef-85bc0bd55075.png"> * * * * * *<img width="400" alt="image" src="https://user-images.githubusercontent.com/45639602/213190921-f2368240-c091-40df-b942-809f91063dfc.png">
 
 **Restaurant Details**
 
-<img width="400" alt="image" src="https://user-images.githubusercontent.com/45639602/213191010-c4241eb0-3273-45eb-9f9c-e5ad9896d6a4.png"> * * * * * * * * * * <img width="400" alt="image" src="https://user-images.githubusercontent.com/45639602/213192452-d34a8f75-98b2-4539-834f-bfa0218041c3.png">
+<img width="400" alt="image" src="https://user-images.githubusercontent.com/45639602/213191010-c4241eb0-3273-45eb-9f9c-e5ad9896d6a4.png"> * * * * * * <img width="400" alt="image" src="https://user-images.githubusercontent.com/45639602/213192452-d34a8f75-98b2-4539-834f-bfa0218041c3.png">
 
 
 **Fake Fetch**
 
-<img width="400" alt="image" src="https://user-images.githubusercontent.com/45639602/213190063-764ba625-850c-45d9-9a8d-f791bc007b0c.png"> * * * * * * * * * * <img width="400" alt="image" src="https://user-images.githubusercontent.com/45639602/213190094-883acdc4-b6f7-4444-a479-37528554cef0.png">
+<img width="400" alt="image" src="https://user-images.githubusercontent.com/45639602/213190063-764ba625-850c-45d9-9a8d-f791bc007b0c.png"> * * * * * * <img width="400" alt="image" src="https://user-images.githubusercontent.com/45639602/213190094-883acdc4-b6f7-4444-a479-37528554cef0.png">
 
 
 ## Demo del producto
