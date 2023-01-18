@@ -10,6 +10,7 @@ import { useNavigation, useRoute } from "@react-navigation/native";
 import { styled } from "nativewind";
 import SearchAddressBar from "../components/SearchAddressBar";
 import Constants from "expo-constants";
+import { fontStyles } from "../utils/FontFamilys";
 
 const ContainerHeader = styled(
   View,
@@ -52,9 +53,13 @@ const RestaurantDetailsScreen = () => {
       </ContainerHeader>
       <ContainerContent>
         <ImageStyle source={img} />
-        <TextTitle>{name}</TextTitle>
-        <TextDescription>{category}</TextDescription>
-        <TextDetails>Detalle de restaurante</TextDetails>
+        <TextTitle style={fontStyles.GothamBold}>{name}</TextTitle>
+        <TextDescription style={fontStyles.GothamBook}>
+          {category}
+        </TextDescription>
+        <TextDetails style={fontStyles.GothamBook}>
+          Detalle de restaurante
+        </TextDetails>
       </ContainerContent>
     </>
   );

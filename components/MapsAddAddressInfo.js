@@ -2,6 +2,7 @@ import { View, Text, TextInput, TouchableOpacity } from "react-native";
 import React from "react";
 import { styled } from "nativewind";
 import { useNavigation } from "@react-navigation/native";
+import { fontStyles } from "../utils/FontFamilys";
 
 const Container = styled(View, "flex flex-col bg-white h-full my-4 p-4");
 const Title = styled(Text, "text-lg font-bold");
@@ -24,11 +25,15 @@ const MapsAddAddressInfo = () => {
 
   return (
     <Container>
-      <Title>Agregar información de entrega</Title>
-      <SubTitle>Depto, Oficina, Piso, Block,</SubTitle>
+      <Title style={fontStyles.GothamBold}>
+        Agregar información de entrega
+      </Title>
+      <SubTitle style={fontStyles.GothamBook}>
+        Depto, Oficina, Piso, Block,
+      </SubTitle>
       <Address multiline={true} numberOfLines={4} />
       <Button onPress={() => navigation.navigate("Home")}>
-        <TextButton>agregar direción</TextButton>
+        <TextButton style={fontStyles.GothamBold}>agregar direción</TextButton>
       </Button>
     </Container>
   );

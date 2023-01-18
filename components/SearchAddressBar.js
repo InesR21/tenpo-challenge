@@ -3,6 +3,7 @@ import React from "react";
 import { styled } from "nativewind";
 import { useSelector } from "react-redux";
 import { selectAddress } from "../features/address/addressSlice";
+import { fontStyles } from "../utils/FontFamilys";
 
 const Container = styled(View, "flex-row items-center px-14");
 const TextAddStyled = styled(Text, "text-[#008f7e] text-base ");
@@ -26,17 +27,26 @@ const SearchAddressBar = ({ detail, showIcon, bold }) => {
       <TextContainer>
         {address ? (
           <TextDetailStyled
-            style={{
-              fontWeight: bold ? "bold" : "normal",
-            }}
+            style={[
+              {
+                fontWeight: bold ? "bold" : "normal",
+              },
+              bold ? null : fontStyles.GothamLight,
+            ]}
           >
             {detail}{" "}
           </TextDetailStyled>
         ) : (
-          <TextAddStyled>Agregar dirección de entrega</TextAddStyled>
+          <TextAddStyled style={fontStyles.GothamLight}>
+            Agregar dirección de entrega
+          </TextAddStyled>
         )}
 
-        {address && <TextDireccion numberOfLines={1}>{address}</TextDireccion>}
+        {address && (
+          <TextDireccion style={fontStyles.GothamLight} numberOfLines={1}>
+            {address}
+          </TextDireccion>
+        )}
       </TextContainer>
     </Container>
   );

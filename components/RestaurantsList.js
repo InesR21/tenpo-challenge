@@ -3,6 +3,7 @@ import React from "react";
 import useRestaurants from "../hooks/useRestaurants";
 import RestaurantsItem from "./RestaurantsItem";
 import { styled } from "nativewind";
+import { fontStyles } from "../utils/FontFamilys";
 
 const Container = styled(View, " w-full space-y-2 pl-4 ");
 const Title = styled(Text, "font-bold text-lg");
@@ -12,7 +13,7 @@ const RestaurantsList = () => {
 
   return (
     <Container>
-      <Title>RESTAURANTES</Title>
+      <Title style={fontStyles.GothamBold}>RESTAURANTES</Title>
       <FlatList
         horizontal
         showsHorizontalScrollIndicator={false}

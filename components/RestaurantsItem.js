@@ -2,6 +2,7 @@ import { View, Text, Image, TouchableOpacity } from "react-native";
 import React from "react";
 import { styled } from "nativewind";
 import { useNavigation } from "@react-navigation/native";
+import { fontStyles } from "../utils/FontFamilys";
 
 const Container = styled(
   View,
@@ -39,13 +40,13 @@ const RestaurantsItem = ({ restaurant = {} }) => {
           <TextDiscount>{discount}</TextDiscount>
         </ViewDiscount>
         <ImageStyled source={img} />
-        <TextStyled>{name}</TextStyled>
+        <TextStyled style={fontStyles.GothamLight}>{name}</TextStyled>
         <TextContainer>
           <ViewScoreStyled>
             <ImageStart source={require("./../assets/img/star.png")} />
-            <TextStyled>{score}</TextStyled>
+            <TextStyled style={fontStyles.GothamLight}>{score}</TextStyled>
           </ViewScoreStyled>
-          <TextStyled>{time}</TextStyled>
+          <TextStyled style={fontStyles.GothamLight}>{time}</TextStyled>
         </TextContainer>
       </Container>
     </TouchableOpacity>

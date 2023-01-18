@@ -29,6 +29,7 @@ const MapScreen = () => {
         styles={{
           textInput: {
             fontSize: 18,
+            fontFamily: "GothamBook",
             borderRadius: 30,
             backgroundColor: "white",
             height: 50,

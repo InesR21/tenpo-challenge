@@ -2,6 +2,7 @@ import { View, Text, Image } from "react-native";
 import React from "react";
 import { styled } from "nativewind";
 import Constants from "expo-constants";
+import { fontStyles } from "../utils/FontFamilys";
 
 const Container = styled(
   View,
@@ -17,7 +18,9 @@ const MapsHeader = () => {
         resizeMode="contain"
         source={require("./../assets/img/header/gps.png")}
       />
-      <TextStyle>Agregar dirección de entrega</TextStyle>
+      <TextStyle style={fontStyles.GothamLight}>
+        Agregar dirección de entrega
+      </TextStyle>
     </Container>
   );
 };

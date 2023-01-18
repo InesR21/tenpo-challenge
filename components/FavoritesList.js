@@ -3,6 +3,7 @@ import React from "react";
 import { favorites } from "../config/globalData";
 import FavoriteItem from "./FavoriteItem";
 import { styled } from "nativewind";
+import { fontStyles } from "../utils/FontFamilys";
 
 const Container = styled(View, " w-full pl-4 ");
 const Title = styled(Text, "font-bold text-lg");
@@ -10,7 +11,7 @@ const Title = styled(Text, "font-bold text-lg");
 const FavoritesList = () => {
   return (
     <Container>
-      <Title>TUS FAVORITOS</Title>
+      <Title style={fontStyles.GothamBold}>TUS FAVORITOS</Title>
       <FlatList
         horizontal
         showsHorizontalScrollIndicator={false}

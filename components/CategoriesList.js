@@ -3,14 +3,15 @@ import React from "react";
 import { categories } from "../config/globalData";
 import CategoriesItem from "./CategoriesItem";
 import { styled } from "nativewind";
+import { fontStyles } from "../utils/FontFamilys";
 
-const Container = styled(View, " w-full space-y-2 pl-4 ");
+const Container = styled(View, " w-full space-y-1 pl-4 ");
 const Title = styled(Text, "font-bold text-lg");
 
 const CategoriesList = () => {
   return (
     <Container>
-      <Title>CATEGORÍAS</Title>
+      <Title style={fontStyles.GothamBold}>CATEGORÍAS</Title>
       <FlatList
         horizontal
         showsHorizontalScrollIndicator={false}

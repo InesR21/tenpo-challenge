@@ -1,18 +1,11 @@
-import {
-  View,
-  Text,
-  Image,
-  FlatList,
-  Dimensions,
-  Animated,
-} from "react-native";
+import { View, Text, Image, FlatList, Animated } from "react-native";
 import React, { useEffect, useRef, useState } from "react";
 import { styled } from "nativewind";
 import { headerCarousel } from "./../config/globalData";
 import HeaderTabs from "./HeaderTabs";
 import HeaderCross from "./HeaderCross";
 import { animatedimgFadeIn } from "../utils/animations";
-const { width } = Dimensions.get("window");
+import { fontStyles } from "../utils/FontFamilys";
 
 const Container = styled(View, "h-40");
 const ContainerCarrousel = styled(
@@ -63,9 +56,13 @@ const HeaderCarrousel = () => {
         renderItem={({ item }) => (
           <ContainerCarrousel>
             <ContainerText>
-              <TextTitle>{item.title}</TextTitle>
-              <TextSubtitle>{item.subtitle}</TextSubtitle>
-              <TextDescription>{item.description}</TextDescription>
+              <TextTitle style={fontStyles.RobotoBlack}>{item.title}</TextTitle>
+              <TextSubtitle style={fontStyles.RobotoBlack}>
+                {item.subtitle}
+              </TextSubtitle>
+              <TextDescription style={fontStyles.GothamBold}>
+                {item.description}
+              </TextDescription>
             </ContainerText>
             <ImageContainer>
               <ImageHand
