@@ -1,10 +1,4 @@
-import {
-  SafeAreaView,
-  StyleSheet,
-  ScrollView,
-  View,
-  TouchableOpacity,
-} from "react-native";
+import { SafeAreaView, ScrollView, View, TouchableOpacity } from "react-native";
 import React from "react";
 import { styled } from "nativewind";
 import Header from "../components/Header";
@@ -52,5 +46,3 @@ const HomeScreen = () => {
 };
 
 export default HomeScreen;
-
-const styles = StyleSheet.create({});

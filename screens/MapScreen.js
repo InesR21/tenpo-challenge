@@ -1,4 +1,4 @@
-import { View, Text, SafeAreaView } from "react-native";
+import { View, SafeAreaView } from "react-native";
 import React from "react";
 import { useNavigation } from "@react-navigation/native";
 import { GooglePlacesAutocomplete } from "react-native-google-places-autocomplete";
@@ -17,8 +17,6 @@ const MapScreen = () => {
   return (
     <SafeAreaView styles={{ position: "relative" }}>
       <MapsHeader />
-
-      {/* Search bar */}
       <GooglePlacesAutocomplete
         placeholder="Escribe tu dirección"
         nearbyPlacesAPI="GooglePlacesSearch"
