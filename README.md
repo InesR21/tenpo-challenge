@@ -34,7 +34,7 @@ Debes desarrollar una aplicación en React Native siguiendo el diseño que se in
 
 **Home**
 
-<img width="400" alt="image" src="https://user-images.githubusercontent.com/45639602/213190151-05f28981-d3bd-4fd8-b986-cbad192735f4.png"> * * * <img width="400" alt="image" src="https://user-images.githubusercontent.com/45639602/213190960-5defc20f-e497-4fb2-afb9-8fc6450d4ac2.png">
+<img width="400" alt="image" src="https://user-images.githubusercontent.com/45639602/213190151-05f28981-d3bd-4fd8-b986-cbad192735f4.png"> * <img width="400" alt="image" src="https://user-images.githubusercontent.com/45639602/213190960-5defc20f-e497-4fb2-afb9-8fc6450d4ac2.png">
 
 **Search Directions**
 
